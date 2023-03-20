@@ -30,3 +30,6 @@ override.tf.json
 
 #pem files
 *.pem
+
+# Terraform lockfile
+.terraform.lock.hcl
