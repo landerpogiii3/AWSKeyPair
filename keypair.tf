@@ -8,6 +8,6 @@ resource "aws_key_pair" "keyPair" {
   public_key = tls_private_key.privateKey.public_key_openssh
 
   provisioner "local-exec" {
-    command = "echo '${tls_private_key.privateKey.private_key_pem}' > ./dimacaliSingaporeKeyPair.pem"    
+    command = "echo '${tls_private_key.privateKey.private_key_pem}' > ./${var.key-pair}.pem"    
   }
 }
