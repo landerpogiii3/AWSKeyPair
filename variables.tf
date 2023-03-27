@@ -1,7 +1,7 @@
 variable "key-pair" {
   description = "The name of the KeyPair to create"
   type = string
-  default = "dimacaliSingaporeKeyPair"
+  default = null
 }
 
 variable "aws_region" {
